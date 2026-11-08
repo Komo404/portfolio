@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Miguel | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <nav aria-label="Primary navigation">
+        <a href="#sobre" data-i18n="navAbout"></a>
+        <a href="#projetos" data-i18n="navProjects"></a>
+        <a href="#habilidades" data-i18n="navSkills"></a>
+        <a href="#contato" data-i18n="navContact"></a>
+        <div class="language-picker">
+            <button
+                class="language-toggle"
+                id="language-toggle"
+                type="button"
+                data-i18n="languageLabel"
+                aria-expanded="false"
+                aria-controls="language-menu">
+            </button>
+            <div class="language-menu" id="language-menu" role="group" aria-label="Select language" hidden>
+                <button type="button" data-language="en" lang="en" aria-pressed="true">English</button>
+                <button type="button" data-language="pt-BR" lang="pt-BR" aria-pressed="false">Português</button>
+                <button type="button" data-language="ja" lang="ja" aria-pressed="false">日本語</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="hero" id="inicio">
+            <span class="eyebrow" data-i18n="role"></span>
+            <h1 data-i18n="heroTitle"></h1>
+            <p class="intro" data-i18n="heroIntro"></p>
+        </section>
+
+        <section id="sobre">
+            <div class="about">
+                <span class="eyebrow" data-i18n="aboutEyebrow"></span>
+                <h2 data-i18n="aboutTitle"></h2>
+                <p data-i18n="aboutDescription"></p>
+                <p data-i18n="aboutCurrent"></p>
+            </div>
+        </section>
+
+        <section id="projetos">
+            <span class="eyebrow" data-i18n="projectsEyebrow"></span>
+            <h2 data-i18n="projectsTitle"></h2>
+
+            <div class="grid">
+                <article class="card">
+                    <div class="project-image" role="img" aria-label="Project image" data-i18n="projectImage"></div>
+                    <h3 data-i18n="projectTitle1"></h3><p data-i18n="projectDescription1"></p>
+                    <span class="tag" data-i18n="projectTag1"></span>
+                </article>
+                <article class="card">
+                    <div class="project-image" role="img" aria-label="Project image" data-i18n="projectImage"></div>
+                    <h3 data-i18n="projectTitle2"></h3><p data-i18n="projectDescription2"></p>
+                    <span class="tag" data-i18n="projectTag2"></span>
+                </article>
+                <article class="card">
+                    <div class="project-image" role="img" aria-label="Project image" data-i18n="projectImage"></div>
+                    <h3 data-i18n="projectTitle3"></h3><p data-i18n="projectDescription3"></p>
+                    <span class="tag" data-i18n="projectTag3"></span>
+                </article>
+            </div>
+          </section>
+
+        <section id="habilidades">
+            <span class="eyebrow" data-i18n="skillsEyebrow"></span><h2 data-i18n="skillsTitle"></h2>
+            <div class="skills"><span data-i18n="skill1"></span><span data-i18n="skill2"></span><span data-i18n="skill3"></span><span data-i18n="skill4"></span><span data-i18n="skill5"></span></div>
+        </section>
+
+        <section id="contato">
+            <div class="contact">
+                <span class="eyebrow" data-i18n="contactEyebrow"></span><h2 data-i18n="contactTitle"></h2>
+                <p data-i18n="contactDescription"></p>
+                <a class="button" href="mailto:migueloliv.dev@gmail.com">migueloliv.dev@gmail.com</a>
+                <p><a href="https://www.linkedin.com/in/miguel-oliv/">LinkedIn</a> · <a href="https://github.com/Komo404">GitHub</a></p>
+            </div>
+        </section>
+
+    </main>
+    <footer><p data-i18n="footer"></p></footer>
+  </div>
+  <script src="i18n.js"></script>
+</body>
+</html>
