@@ -1,135 +1,172 @@
 const translations = {
-  en: {
-    navLabel: "Primary navigation",
-    menuLabel: "Select language",
-    navAbout: "About",
-    navProjects: "Projects",
-    navSkills: "Skills",
-    navContact: "Contact",
-    languageLabel: "Language",
-    role: "Software Engineer",
-    heroTitle: "Applied Engineering in Software.",
-    heroIntro: "Hello, I'm Miguel. A Software Engineering student.",
-    aboutEyebrow: "About me",
-    aboutTitle: "Hi, I'm Miguel.",
-    aboutDescription: "I'm a Software Engineering student. I like to design and develop projects.",
-    aboutCurrent: "Currently, I'm developing a backend server.",
-    projectsEyebrow: "Selected projects",
-    projectsTitle: "Featured projects",
-    projectImage: "Project image",
-    projectTitle1: "BootStrapper",
-    projectDescription1: "A desktop application built with C# and Avalonia.",
-    projectTag1: "ASP.NET, C#, Avalonia",
-    projectTitle2: "NamaStream",
-    projectDescription2: "A backend service built with Hono and JavaScript.",
-    projectTag2: "Hono, JavaScript, Node.js",
-    projectTitle3: "Event-Driven System",
-    projectDescription3: "An event-driven system built with .NET and RabbitMQ.",
-    projectTag3: "C#, .NET, RabbitMQ",
-    skillsEyebrow: "What I do",
-    skillsTitle: "Skills",
-    skill1: "ASP.NET",
-    skill2: "C#",
-    skill3: "Avalonia",
-    skill4: "JavaScript",
-    skill5: "Node.js",
-    contactEyebrow: "Let's talk",
-    contactTitle: "Interested in something?",
-    contactDescription: "I'm available for new opportunities.",
-    footer: "© 2026 Miguel.",
-    pageTitle: "Miguel | Portfolio",
-    pageDescription: "Portfolio: software engineering projects and skills."
-    
+  "en": {
+    "navLabel": "Primary navigation",
+    "menuLabel": "Select language",
+    "navOverview": "Overview",
+    "navProjects": "Projects",
+    "navContact": "Contact",
+    "languageLabel": "Language",
+    "themeToDark": "Dark mode",
+    "themeToLight": "Light mode",
+    "overviewTitle": "Overview",
+    "overviewIntro": "Backend development with .NET and C#. Additional projects in JavaScript and desktop development.",
+    "metricProjects": "Listed projects",
+    "chartTitle": "Languages",
+    "chartDescription": "Number of listed projects per language.",
+    "chartAxisLabel": "Projects",
+    "projectsTitle": "Projects",
+    "projectsIntro": "All my projects",
+    "viewProject": "View project",
+    "projectTitle1": "BootStrapper",
+    "projectDescription1": "A desktop application built with C# and Avalonia.",
+    "projectTag1": "ASP.NET, C#, Avalonia",
+    "projectTitle2": "NamaStream",
+    "projectDescription2": "A backend service built with Hono and JavaScript.",
+    "projectTag2": "Hono, JavaScript, Node.js",
+    "projectTitle3": "Event-Driven System",
+    "projectDescription3": "An event-driven system built with .NET and RabbitMQ.",
+    "projectTag3": "C#, .NET, RabbitMQ",
+    "backToProjects": "Back to projects",
+    "projectType": "Type",
+    "projectLanguage": "Language",
+    "projectStack": "Technologies",
+    "typeDesktop": "Desktop application",
+    "typeBackend": "Backend service",
+    "typeEvents": "Event-driven system",
+    "documentationTitle": "Technical documentation",
+    "documentationNote": "Architecture, implementation details, and local setup instructions will be added here.",
+    "contactTitle": "Contact",
+    "footer": "© 2026 Miguel.",
+    "pageTitle": "Projects | Miguel",
+    "pageDescription": "Software projects with a focus on .NET, C#, and backend development."
   },
   "pt-BR": {
-    navLabel: "Navegação principal",
-    menuLabel: "Selecionar idioma",
-    navAbout: "Sobre",
-    navProjects: "Projetos",
-    navSkills: "Habilidades",
-    navContact: "Contato",
-    languageLabel: "Idioma",
-    role: "Engenheiro de Software",
-    heroTitle: "Engenharia aplicada ao desenvolvimento de software.",
-    heroIntro: "Olá, sou Miguel, estudante de Engenharia de Software.",
-    aboutEyebrow: "Sobre mim",
-    aboutTitle: "Olá, sou Miguel.",
-    aboutDescription: "Sou estudante de Engenharia de Software e gosto de projetar e desenvolver projetos.",
-    aboutCurrent: "Atualmente, estou desenvolvendo um servidor backend.",
-    projectsEyebrow: "Projetos selecionados",
-    projectsTitle: "Projetos em destaque",
-    projectImage: "Imagem do projeto",
-    projectTitle1: "BootStrapper",
-    projectDescription1: "Aplicativo desktop desenvolvido com C# e Avalonia.",
-    projectTag1: "ASP.NET, C#, Avalonia",
-    projectTitle2: "NamaStream",
-    projectDescription2: "Serviço backend desenvolvido com Hono e JavaScript.",
-    projectTag2: "Hono, JavaScript, Node.js",
-    projectTitle3: "Event-Driven System",
-    projectDescription3: "Sistema orientado a eventos desenvolvido com .NET e RabbitMQ.",
-    projectTag3: "C#, .NET, RabbitMQ",
-    skillsEyebrow: "O que faço",
-    skillsTitle: "Habilidades",
-    skill1: "ASP.NET",
-    skill2: "C#",
-    skill3: "Avalonia",
-    skill4: "JavaScript",
-    skill5: "Node.js",
-    contactEyebrow: "Vamos conversar",
-    contactTitle: "Se interessou em algo?",
-    contactDescription: "Estou disponível para novas oportunidades.",
-    footer: "© 2026 Miguel.",
-    pageTitle: "Miguel | Portfólio",
-    pageDescription: "Portfólio: Projetos e habilidades em Engenharia de Software."
+    "navLabel": "Navegação principal",
+    "menuLabel": "Selecionar idioma",
+    "navOverview": "Visão geral",
+    "navProjects": "Projetos",
+    "navContact": "Contato",
+    "languageLabel": "Idioma",
+    "themeToDark": "Modo escuro",
+    "themeToLight": "Modo claro",
+    "overviewTitle": "Visão geral",
+    "overviewIntro": "Desenvolvimento backend com .NET e C#. Projetos complementares em JavaScript e desktop.",
+    "metricProjects": "Projetos listados",
+    "chartTitle": "Linguagens",
+    "chartDescription": "Quantidade de projetos listados por linguagem.",
+    "chartAxisLabel": "Projetos",
+    "projectsTitle": "Projetos",
+    "projectsIntro": "Todos os meus projetos",
+    "viewProject": "Ver projeto",
+    "projectTitle1": "BootStrapper",
+    "projectDescription1": "Aplicativo desktop desenvolvido com C# e Avalonia.",
+    "projectTag1": "ASP.NET, C#, Avalonia",
+    "projectTitle2": "NamaStream",
+    "projectDescription2": "Serviço backend desenvolvido com Hono e JavaScript.",
+    "projectTag2": "Hono, JavaScript, Node.js",
+    "projectTitle3": "Event-Driven System",
+    "projectDescription3": "Sistema orientado a eventos desenvolvido com .NET e RabbitMQ.",
+    "projectTag3": "C#, .NET, RabbitMQ",
+    "backToProjects": "Voltar aos projetos",
+    "projectType": "Tipo",
+    "projectLanguage": "Linguagem",
+    "projectStack": "Tecnologias",
+    "typeDesktop": "Aplicativo desktop",
+    "typeBackend": "Serviço backend",
+    "typeEvents": "Sistema orientado a eventos",
+    "documentationTitle": "Documentação técnica",
+    "documentationNote": "Arquitetura, detalhes de implementação e instruções de execução local serão adicionados aqui.",
+    "contactTitle": "Contato",
+    "footer": "© 2026 Miguel.",
+    "pageTitle": "Projetos | Miguel",
+    "pageDescription": "Projetos de software com foco em .NET, C# e desenvolvimento backend."
   },
-  ja: {
-    navLabel: "メインナビゲーション",
-    menuLabel: "言語を選択",
-    navAbout: "プロフィール",
-    navProjects: "プロジェクト",
-    navSkills: "スキル",
-    navContact: "お問い合わせ",
-    languageLabel: "言語",
-    role: "ソフトウェアエンジニア",
-    heroTitle: "ソフトウェア開発に、工学の力を。",
-    heroIntro: "こんにちは、ミゲルです。ソフトウェア工学を学んでいます。",
-    aboutEyebrow: "プロフィール",
-    aboutTitle: "ミゲルです。",
-    aboutDescription: "ソフトウェア工学を学びながら、プロジェクトの設計や開発に取り組んでいます。",
-    aboutCurrent: "現在、バックエンドサーバーを開発しています。",
-    projectsEyebrow: "制作したプロジェクト",
-    projectsTitle: "注目のプロジェクト",
-    projectImage: "プロジェクトの画像",
-    projectTitle1: "BootStrapper",
-    projectDescription1: "C#とAvaloniaで開発したデスクトップアプリケーションです。",
-    projectTag1: "ASP.NET、C#、Avalonia",
-    projectTitle2: "NamaStream",
-    projectDescription2: "HonoとJavaScriptで開発したバックエンドサービスです。",
-    projectTag2: "Hono、JavaScript、Node.js",
-    projectTitle3: "イベント駆動システム",
-    projectDescription3: ".NETとRabbitMQを使用したイベント駆動システムです。",
-    projectTag3: "C#、.NET、RabbitMQ",
-    skillsEyebrow: "できること",
-    skillsTitle: "スキル",
-    skill1: "ASP.NET",
-    skill2: "C#",
-    skill3: "Avalonia",
-    skill4: "JavaScript",
-    skill5: "Node.js",
-    contactEyebrow: "お問い合わせ",
-    contactTitle: "気になるものはありましたか？",
-    contactDescription: "新しい機会を歓迎しています。",
-    footer: "© 2026 Miguel.",
-    pageTitle: "ミゲル | ポートフォリオ",
-    pageDescription: "ミゲルのポートフォリオ：ソフトウェア工学のプロジェクトとスキル。"
+  "ja": {
+    "navLabel": "メインナビゲーション",
+    "menuLabel": "言語を選択",
+    "navOverview": "概要",
+    "navProjects": "プロジェクト",
+    "navContact": "お問い合わせ",
+    "languageLabel": "言語",
+    "themeToDark": "ダークモード",
+    "themeToLight": "ライトモード",
+    "overviewTitle": "概要",
+    "overviewIntro": ".NETとC#によるバックエンド開発を中心に、JavaScriptやデスクトップアプリケーションのプロジェクトも掲載しています。",
+    "metricProjects": "掲載プロジェクト",
+    "chartTitle": "開発言語",
+    "chartDescription": "言語ごとの掲載プロジェクト数。",
+    "chartAxisLabel": "プロジェクト数",
+    "projectsTitle": "プロジェクト",
+    "projectsIntro": "すべてのプロジェクト",
+    "viewProject": "プロジェクトを見る",
+    "projectTitle1": "BootStrapper",
+    "projectDescription1": "C#とAvaloniaで開発したデスクトップアプリケーションです。",
+    "projectTag1": "ASP.NET、C#、Avalonia",
+    "projectTitle2": "NamaStream",
+    "projectDescription2": "HonoとJavaScriptで開発したバックエンドサービスです。",
+    "projectTag2": "Hono、JavaScript、Node.js",
+    "projectTitle3": "イベント駆動システム",
+    "projectDescription3": ".NETとRabbitMQを使用したイベント駆動システムです。",
+    "projectTag3": "C#、.NET、RabbitMQ",
+    "backToProjects": "プロジェクト一覧に戻る",
+    "projectType": "種類",
+    "projectLanguage": "開発言語",
+    "projectStack": "使用技術",
+    "typeDesktop": "デスクトップアプリケーション",
+    "typeBackend": "バックエンドサービス",
+    "typeEvents": "イベント駆動システム",
+    "documentationTitle": "技術ドキュメント",
+    "documentationNote": "アーキテクチャ、実装の詳細、ローカル環境での実行手順を今後追加します。",
+    "contactTitle": "お問い合わせ",
+    "footer": "© 2026 Miguel.",
+    "pageTitle": "プロジェクト | ミゲル",
+    "pageDescription": ".NET、C#、バックエンド開発を中心としたソフトウェアプロジェクト。"
   }
 };
 
 const languageToggle = document.querySelector("#language-toggle");
+const themeToggle = document.querySelector("#theme-toggle");
 const languageMenu = document.querySelector("#language-menu");
 const languageOptions = languageMenu.querySelectorAll("[data-language]");
 const supportedLanguages = Object.keys(translations);
-let currentLanguage = supportedLanguages.includes(document.documentElement.lang) ? document.documentElement.lang : "en";
+
+// Preferences follow links between the static project pages.
+function readPreference(key) 
+{
+  try {
+    return localStorage.getItem(key);
+  } catch {
+    return null;
+  }
+}
+
+function savePreference(key, value) {
+  try {
+    localStorage.setItem(key, value);
+  } catch {
+    // The site should also work when browser storage is unavailable
+  }
+}
+
+const savedLanguage = readPreference("portfolio-language");
+let currentLanguage = supportedLanguages.includes(savedLanguage) ? savedLanguage : document.documentElement.lang;
+const savedTheme = readPreference("portfolio-theme");
+let currentTheme = savedTheme === "dark" || savedTheme === "light" ? savedTheme : window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+
+function updateThemeLabel() 
+{
+  const labelKey = currentTheme === "dark" ? "themeToLight" : "themeToDark";
+  themeToggle.textContent = translations[currentLanguage][labelKey];
+  themeToggle.setAttribute("aria-pressed", String(currentTheme === "dark"));
+}
+
+function setTheme(theme) 
+{
+  currentTheme = theme;
+  document.documentElement.dataset.theme = theme;
+  updateThemeLabel();
+  savePreference("portfolio-theme", theme);
+}
 
 function changeLanguage(language) 
 {
@@ -140,20 +177,25 @@ function changeLanguage(language)
     element.textContent = content[element.dataset.i18n];
   });
 
-  document.title = content.pageTitle;
-  document.querySelector('meta[name="description"]').content = content.pageDescription;
+  const projectTitle = content[document.body.dataset.projectTitle];
+  document.title = projectTitle ? `${projectTitle} | Miguel` : content.pageTitle;
+  const descriptionKey = document.body.dataset.projectDescription || "pageDescription";
+  document.querySelector('meta[name="description"]').content = content[descriptionKey];
   document.querySelector("nav").setAttribute("aria-label", content.navLabel);
   languageMenu.setAttribute("aria-label", content.menuLabel);
-  document.querySelectorAll('[data-i18n="projectImage"]').forEach((element) => {
-    element.setAttribute("aria-label", content.projectImage);
-  });
 
   languageOptions.forEach((option) => {
     option.setAttribute("aria-pressed", String(option.dataset.language === language));
   });
 
   currentLanguage = language;
+  savePreference("portfolio-language", language);
+  updateThemeLabel();
 }
+
+themeToggle.addEventListener("click", () => {
+  setTheme(currentTheme === "dark" ? "light" : "dark");
+});
 
 languageToggle.addEventListener("click", () => {
   const isExpanded = languageToggle.getAttribute("aria-expanded") === "true";
@@ -187,3 +229,4 @@ document.addEventListener("keydown", (event) => {
 });
 
 changeLanguage(currentLanguage);
+setTheme(currentTheme);

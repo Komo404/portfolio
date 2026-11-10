@@ -3,90 +3,107 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Miguel | Portfolio</title>
+  <meta name="description" content="Software projects with a focus on .NET, C#, and backend development.">
+  <title>Projects | Miguel</title>
   <link rel="stylesheet" href="style.css">
+  <script src="i18n.js" defer></script>
 </head>
 <body>
   <div class="wrap">
-    <header>
+    <header class="site-header">
       <nav aria-label="Primary navigation">
-        <a href="#sobre" data-i18n="navAbout"></a>
-        <a href="#projetos" data-i18n="navProjects"></a>
-        <a href="#habilidades" data-i18n="navSkills"></a>
-        <a href="#contato" data-i18n="navContact"></a>
+        <a data-i18n="navOverview" href="index.html" aria-current="page">Overview</a>
+        <a data-i18n="navProjects" href="index.html#projetos">Projects</a>
+        <a data-i18n="navContact" href="#contato">Contact</a>
+      </nav>
+      <div class="preferences">
         <div class="language-picker">
-            <button
-                class="language-toggle"
-                id="language-toggle"
-                type="button"
-                data-i18n="languageLabel"
-                aria-expanded="false"
-                aria-controls="language-menu">
-            </button>
-            <div class="language-menu" id="language-menu" role="group" aria-label="Select language" hidden>
-                <button type="button" data-language="en" lang="en" aria-pressed="true">English</button>
-                <button type="button" data-language="pt-BR" lang="pt-BR" aria-pressed="false">Português</button>
-                <button type="button" data-language="ja" lang="ja" aria-pressed="false">日本語</button>
-                </div>
-            </div>
-        </nav>
+          <button class="language-toggle" id="language-toggle" type="button" data-i18n="languageLabel" aria-expanded="false" aria-controls="language-menu">Language</button>
+          <div class="language-menu" id="language-menu" role="group" aria-label="Select language" hidden>
+            <button type="button" data-language="en" lang="en" aria-pressed="true">English</button>
+            <button type="button" data-language="pt-BR" lang="pt-BR" aria-pressed="false">Português</button>
+            <button type="button" data-language="ja" lang="ja" aria-pressed="false">日本語</button>
+          </div>
+        </div>
+        <button class="theme-toggle" id="theme-toggle" type="button" data-i18n="themeToDark" aria-pressed="false">Dark mode</button>
+      </div>
     </header>
     <main>
-        <section class="hero" id="inicio">
-            <span class="eyebrow" data-i18n="role"></span>
-            <h1 data-i18n="heroTitle"></h1>
-            <p class="intro" data-i18n="heroIntro"></p>
-        </section>
+      <section class="page-heading" aria-labelledby="overview-title">
+        <h1 data-i18n="overviewTitle" id="overview-title">Overview</h1>
+        <p data-i18n="overviewIntro" class="intro">Backend development with .NET and C#. Additional projects in JavaScript and desktop development.</p>
 
-        <section id="sobre">
-            <div class="about">
-                <span class="eyebrow" data-i18n="aboutEyebrow"></span>
-                <h2 data-i18n="aboutTitle"></h2>
-                <p data-i18n="aboutDescription"></p>
-                <p data-i18n="aboutCurrent"></p>
+        <div class="summary">
+
+          <div class="project-total">
+             <dt data-i18n="metricProjects">Listed projects</dt> <!-- dt stands for definition term, its used for the term being defined -->
+            <dd>3</dd> <!-- dd stands for definition description, its used for the description of the term -->
+          </div>
+
+          <figure class="language-chart" aria-labelledby="language-chart-title" aria-describedby="language-chart-description">
+            
+            <figcaption>
+              <h2 id="language-chart-title" data-i18n="chartTitle">Languages</h2>
+              <p id="language-chart-description" data-i18n="chartDescription">Number of listed projects per language.</p>
+            </figcaption>
+            
+            <ul class="language-bars">
+              <li><span>C#</span><span class="language-track" aria-hidden="true"><span class="language-bar" style="--count: 2"></span></span><span>2</span></li>
+              <li><span>Python</span><span class="language-track" aria-hidden="true"><span class="language-bar" style="--count: 0"></span></span><span>0</span></li>
+              <li><span>Java</span><span class="language-track" aria-hidden="true"><span class="language-bar" style="--count: 0"></span></span><span>0</span></li>
+              <li><span>JavaScript</span><span class="language-track" aria-hidden="true"><span class="language-bar" style="--count: 1"></span></span><span>1</span></li>
+            </ul>
+
+            <div class="chart-axis" aria-hidden="true"><span>0</span><span>1</span><span>2</span><span>3</span></div>
+            <p class="chart-axis-label" data-i18n="chartAxisLabel">Projects</p>
+          </figure>
+        </div>
+      </section>
+
+      <section id="projetos" aria-labelledby="projects-title">
+        <h2 data-i18n="projectsTitle" id="projects-title">Projects</h2>
+        <p data-i18n="projectsIntro" class="section-intro">Summary and technology stack. Open a project for more details.</p>
+        <div class="project-list">
+
+          <article class="project-row">
+            <div>
+              <h3 id="project-name-3"><a href="projects/event-driven-system.html" data-i18n="projectTitle3">Event-Driven System</a></h3>
+              <p data-i18n="projectDescription3">An event-driven system built with .NET and RabbitMQ.</p>
             </div>
-        </section>
+            <p data-i18n="projectTag3" class="stack">C#, .NET, RabbitMQ</p>
+            <a data-i18n="viewProject" class="project-link" href="projects/event-driven-system.html" aria-labelledby="view-project-3 project-name-3" id="view-project-3">View project</a>
+          </article>
 
-        <section id="projetos">
-            <span class="eyebrow" data-i18n="projectsEyebrow"></span>
-            <h2 data-i18n="projectsTitle"></h2>
-
-            <div class="grid">
-                <article class="card">
-                    <div class="project-image" role="img" aria-label="Project image" data-i18n="projectImage"></div>
-                    <h3 data-i18n="projectTitle1"></h3><p data-i18n="projectDescription1"></p>
-                    <span class="tag" data-i18n="projectTag1"></span>
-                </article>
-                <article class="card">
-                    <div class="project-image" role="img" aria-label="Project image" data-i18n="projectImage"></div>
-                    <h3 data-i18n="projectTitle2"></h3><p data-i18n="projectDescription2"></p>
-                    <span class="tag" data-i18n="projectTag2"></span>
-                </article>
-                <article class="card">
-                    <div class="project-image" role="img" aria-label="Project image" data-i18n="projectImage"></div>
-                    <h3 data-i18n="projectTitle3"></h3><p data-i18n="projectDescription3"></p>
-                    <span class="tag" data-i18n="projectTag3"></span>
-                </article>
+          <article class="project-row">
+            <div>
+              <h3 id="project-name-2"><a href="projects/namastream.html" data-i18n="projectTitle2">NamaStream</a></h3>
+              <p data-i18n="projectDescription2">A backend service built with Hono and JavaScript.</p>
             </div>
-          </section>
+            <p data-i18n="projectTag2" class="stack">Hono, JavaScript, Node.js</p>
+            <a data-i18n="viewProject" class="project-link" href="projects/namastream.html" aria-labelledby="view-project-2 project-name-2" id="view-project-2">View project</a>
+          </article>
 
-        <section id="habilidades">
-            <span class="eyebrow" data-i18n="skillsEyebrow"></span><h2 data-i18n="skillsTitle"></h2>
-            <div class="skills"><span data-i18n="skill1"></span><span data-i18n="skill2"></span><span data-i18n="skill3"></span><span data-i18n="skill4"></span><span data-i18n="skill5"></span></div>
-        </section>
-
-        <section id="contato">
-            <div class="contact">
-                <span class="eyebrow" data-i18n="contactEyebrow"></span><h2 data-i18n="contactTitle"></h2>
-                <p data-i18n="contactDescription"></p>
-                <a class="button" href="mailto:migueloliv.dev@gmail.com">migueloliv.dev@gmail.com</a>
-                <p><a href="https://www.linkedin.com/in/miguel-oliv/">LinkedIn</a> · <a href="https://github.com/Komo404">GitHub</a></p>
+          <article class="project-row">
+            <div>
+              <h3 id="project-name-1"><a href="projects/bootstrapper.html" data-i18n="projectTitle1">BootStrapper</a></h3>
+              <p data-i18n="projectDescription1">A desktop application built with C# and Avalonia.</p>
             </div>
-        </section>
+            <p data-i18n="projectTag1" class="stack">ASP.NET, C#, Avalonia</p>
+            <a data-i18n="viewProject" class="project-link" href="projects/bootstrapper.html" aria-labelledby="view-project-1 project-name-1" id="view-project-1">View project</a>
+          </article>
 
+        </div>
+      </section>
     </main>
-    <footer><p data-i18n="footer"></p></footer>
+    <footer id="contato">
+      <h2 data-i18n="contactTitle">Contact</h2>
+      <div class="footer-links">
+        <a href="mailto:migueloliv.dev@gmail.com">migueloliv.dev@gmail.com</a>
+        <a href="https://github.com/Komo404">GitHub</a>
+        <a href="https://www.linkedin.com/in/miguel-oliv/">LinkedIn</a>
+      </div>
+      <p data-i18n="footer">© 2026 Miguel.</p>
+    </footer>
   </div>
-  <script src="i18n.js"></script>
 </body>
 </html>
