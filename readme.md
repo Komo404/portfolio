@@ -1,6 +1,6 @@
 # Portfolio
 
-A personal website to showcase my projects, skills, and background as a Software Engineering student.
+A personal website to showcase my projects, skills, and background as a Software Engineering student.\
 Access through komo404.github.io/portfolio
 
 ## Objectives
@@ -13,4 +13,4 @@ Access through komo404.github.io/portfolio
 
 - HTML
 - CSS
-- JavaScript
+- TypeScript

@@ -1,0 +1,22 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "A personal website to showcase my projects, skills, and background as a Software Engineering student.\\ Access through komo404.github.io/portfolio",
+  "main": "i18n.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Komo404/portfolio.git"
+  },
+  "keywords": [],
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Komo404/portfolio/issues"
+  },
+  "homepage": "https://github.com/Komo404/portfolio#readme",
+  "devDependencies": {
+    "typescript": "^7.0.2"
+  }
+}
